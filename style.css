@@ -35,3 +35,12 @@ background: url(images/banner.png) no-repeat
 	height:50px;
 	border: 1px solid red;
 }
+
+/*buttons*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: montserrat, sans-serif;
+}
