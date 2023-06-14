@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> test website </title>
+    <title> IbisHelp - Ibispaint tutorial website </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <!-- BEGIN FAVICON CODE -->
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -22,13 +22,22 @@ body {
   background-image: url('https://wallpapers.com/images/featured/mvqzjym6ie17firw.jpg');
   background-repeat: no-repeat;
 }
+
+   @media (max-width: 767px) {
+        .hidden-mobile {
+          display: none;
+        }
+      }
+	  
+	  
 </style>
 <!-- end background image code -->
 
  </head>
   <body>
+ 
   <!--- BEGIN NAV CODE -->
-   <div class="opacity-">
+ <div class="opacity-75">
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="G:\Shared drives\2024 Information Software Technology\Zoë.Rath\MyFirstWebsite\2024IST-Website-Zoe.Rath\index.html"><IMG src="images\logo.png" class="img-fluid"/></a>
@@ -41,10 +50,10 @@ body {
           <a class="nav-link active" aria-current="page" href="G:\Shared drives\2024 Information Software Technology\Zoë.Rath\MyFirstWebsite\2024IST-Website-Zoe.Rath\index.html">Home</a>
         </li>
 	        <li class="nav-item">
-          <a class="nav-link" href="https://ibispaint.com/">Ibispaint</a>
+          <a class="nav-link" href="https://ibispaint.com/" target="_blank">Ibispaint</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://ibispaint.com/product.jsp">Get Ibispaint</a>
+          <a class="nav-link" href="https://ibispaint.com/product.jsp" target="_blank">Get Ibispaint</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,13 +61,13 @@ body {
           </a>
           <ul class="dropdown-menu">
 		  <li><a class="dropdown-item" href="#">Layers</a></li>
-            <li><a class="dropdown-item" href="OtherPages/Layers/layerfeatures/index.html">Layer Features</a></li>
-            <li><a class="dropdown-item" href="OtherPages/Layers/blendmodes/index.html">Blend Modes</a></li>
+            <li><a class="dropdown-item" href="layerfeatures.html">Layer Features</a></li>
+            <li><a class="dropdown-item" href="blendingmodes.html">Blend Modes</a></li>
 			<li><a class="dropdown-item" href="#">Tools and Brushes</a></li>
-            <li><a class="dropdown-item" href="OtherPages/ToolsAndBrushes/tools/index.html">Tools</a></li>
-			<li><a class="dropdown-item" href="OtherPages/ToolsAndBrushes/brushes/index.html">Brushes</a></li>
+            <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+			<li><a class="dropdown-item" href="brushes.html">Brushes</a></li>
 			<li><a class="dropdown-item" href="#">Settings and Personalisation</a></li>
-			<li><a class="dropdown-item" href="OtherPages/SettingsAndPersonalisation/settings/index.html">Settings</a></li>
+			<li><a class="dropdown-item" href="settings.html">Settings</a></li>
           </ul>
         </li>
       </ul>
@@ -71,16 +80,12 @@ body {
 </nav>
 </div>
   <!--- END NAV CODE -->
-  
-  
-  <!-- BEGIN MAIN STUFF CODE -->
-  <div class="container text-center">
-  <div class="row">
-    <div class="col">
-   <div style='text-align:left'>
-   <!-- BEGIN COLUMN CODE -->
-<div class="container-sm">
-<div class="col-3 p-3 mb-2">
+
+
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-12">
+<div class="hidden-mobile">
  <p>
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Layers
@@ -89,15 +94,15 @@ body {
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
     <ul class="list-group">
-  <li class="list-group-item"><a href="OtherPages/Layers/blendmodes/index.html"></li>
+  <li class="list-group-item"><a href="blendingmodes.html"></li>
   <li class="list-group-item">Blending Modes</li>
-  <li class="list-group-item"><a href="OtherPages/Layers/layerfeatures/index.html"></li>
+  <li class="list-group-item"><a href="layerfeatures.html"></li>
   <li class="list-group-item">Layer Features</li>
 </ul>
   </div>
 </div>
 
-<p>
+
    <p>
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Tools and Brushes
@@ -106,16 +111,16 @@ body {
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
     <ul class="list-group">
-  <li class="list-group-item"><a href="OtherPages/ToolsAndBrushes/tools/index.html"></li>
+  <li class="list-group-item"><a href="tools.html"></li>
   <li class="list-group-item">Tools</li>
-   <li class="list-group-item"><a href="OtherPages/ToolsAndBrushes/brushes/index.html"></li>
+   <li class="list-group-item"><a href="brushes.html"></li>
   <li class="list-group-item">Brushes</li>
 </ul>
   </div>
 </div>
-</p>
 
-<p>
+
+
 <div>
    <p>
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -125,36 +130,28 @@ body {
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
     <ul class="list-group">
-  <li class="list-group-item"><a href="OtherPages/SettingsAndPersonalisation/settings/index.html"></li>
+  <li class="list-group-item"><a href="settings.html"></a></li>
   <li class="list-group-item">Settings</li>
 </ul>
   </div>
 </div>
 </div>
-    </div>
-</div>
-</p>
-</div>
-   <!-- BEGIN COLUMN CODE -->
-      <p>
-	  </div>
-   <!-- BEGIN MAIN BODY CODE -->
-   <!-- BEGIN IMAGE AND TEXT 1 CODE -->
-    <div class="col">
-	<div style='text-align:left'>
-    <h1> I AM GOING TO CRY </h1>
-    </div>
 
-   <!-- BEGIN IMAGE AND TEXT 1 CODE -->
-   
-   <!-- BEGIN IMAGE AND TEXT 2 CODE -->
-   <!-- BEGIN IMAGE AND TEXT 2 CODE -->
-     </div>
-  </div>
-  </p>
-   <!-- END MAIN BODY CODE -->
-   
-  <!-- END MAIN STUFF CODE -->
+</div>
+</div>
+
+
+<div class="col-lg-9 col-md-12">
+<div class="container">
+<container style="background-color:#ffffff">
+
+ right col
+ </div>
+</div>
+
+</div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
